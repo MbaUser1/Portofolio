@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="https://d31ezp3r8jwmks.cloudfront.net/5y0otveb8h52e77q3ndd0p16x677">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+	<title>Se connecter à VisionTech - Développement Web</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Inter", sans-serif;
+		}
+		.header{
+			background-color: #fdfdfd;
+			padding: 0 5.8% 0  8.9%;
+			display:flex;
+			align-items: center;
+			justify-content: space-between;/**/
+			width: 85.22%;
+			height: 13.5vh;
+			margin-bottom: 5vh;
+		}
+		.body{
+			border: 1px solid #d5d7d9;
+			border-radius: 10px;
+			width: 88.4%;
+			margin: 0 5.7%;
+			height: 63vh;
+			display: flex;
+			text-align: center;
+			align-items: center;
+            justify-content: center;
+		}
+		.heada{     
+			width: 36%;
+			height: 82%;
+		}
+		.head{   
+			width: 25%;
+			height: 45%;
+			font-size: 15px;
+			justify-content:space-between;display: flex;
+			align-items: center;
+		}/*baseline*/
+		p{
+            color: white;
+		}
+		form{
+			width: 100%;
+			height: 70%;
+			margin-top:0px ;
+			padding: 2px;
+			/*border: 1px solid;*/
+
+		}
+		input{
+			  display: block;
+        width: 90%;
+    		height: 12%;
+    		padding: 0.4375rem 1rem;
+    		font-size: 1rem;
+    		font-weight: 400;
+   		  line-height: 1.75;
+    		color: #0d161b;
+    		background-color: #fff;
+    		background-clip: padding-box;
+    		border: 1px solid #d5d7d9;
+    		border-radius: 0.5rem;
+    		transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    		margin-bottom: 15px ;
+		}
+		label{
+		
+			display: flex;
+			color: #0d161b;
+			text-align:right;
+			width: 90%;
+		  line-height: 1.35rem;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+		}
+		h2{
+			color: #0d161b;
+			margin-top: 10px ;
+			font-size: 23px;
+			 letter-spacing: -0.5px;
+			/*display: flex;
+			text-align:right;*/
+			font-family: "Inter", sans-serif;
+			height: 10vh;
+		}
+		p{
+			font-family: 'Roboto Mono', monospace;
+			font-weight: 550;
+			font-size: 14px;
+			 letter-spacing: -0.5px;
+           line-height: 1.75;
+           color: #0d161b;
+		}
+
+		button:hover{
+			/*display: inline-block;text-align: center;transition-property: transform, box-shadow;
+    transition-duration: 0.35s;outline: none;text-transform: none;
+    appearance: none;*/
+		}
+		button{
+			      font-family: 'Roboto Mono', monospace;
+            letter-spacing: -1px;
+            line-height: 2;
+            border: 0px;
+            cursor: pointer;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-size: 16px;
+            border-radius: 4px;
+            background-color: rgb(157, 255, 255);
+            color: rgb(36, 35, 35);
+		}
+		.sub{
+			     color: #fff;
+           background-color: #0d161b;
+           opacity: 0.4;
+           border-color: #0d161b;
+           width: 97%;
+           height: 6vh;
+		}
+		.footer{
+			margin-top: 31px;
+			width: 100%;
+			height: 61.3vh;
+			background: #181717;
+			display: flex;
+			text-align: center;
+			align-items: center;
+            justify-content: center;
+		}
+		a {
+   color:  black;;
+    text-decoration: none;
+    background-color: transparent;
+      }
+    .ames{
+    	width:98.7% ;
+    	display: flex; 
+    	justify-content: right;
+    } 
+    .message{
+    	margin-top: 3.5%;
+    	padding: 9px;
+    	border: 1px solid rgb(157, 255, 255);
+    	border-radius: 130%;
+    	width: 2.5%;
+    	height: 5vh;
+    	text-align: center;
+    	position: fixed;
+    	background-color: rgb(157, 255, 255);
+    }
+    img{
+    	border-radius: 100%;
+    	width: 45px;
+    	height: 45px;
+    	background-color: rgb(157, 255, 255);
+    }
+    .fimg{
+    	border-radius: 100%;
+    	width: 75px;
+    	height: 75px;
+    	background-color: rgb(157, 255, 255);
+    }
+    i{
+    	margin-bottom: 5%;
+    	color: white;
+    	cursor:pointer ;
+    } 
+    .bx-conversation{
+    	color: black;
+    }
+    .patte{
+    	border-radius: 5px;
+    	background-color: white;
+    	color: black;
+    	width: 65%;
+    	height: 3vh;
+    	margin:6% 17%;
+    	padding: 10px;
+    }
+    .div{
+    	border-left: 0.5px solid #4b2aad;
+    	width: 1%;
+    	height: 100%;
+    	margin: 0 8px	;
+    }
+    .white{
+    	color: white;
+    }
+    .violet{
+    	color: #4b2aad;
+    }
+    .belge{
+    	color: #58697b;
+    }
+	</style>
+</head>
+<body>
+<header>
+  <div class="header" class="belge">
+    <div class="head"> <img src="">VisionTech -Developpement web</div>
+    <div class=""> <button>Se connecter</button></div>
+  </div>
+</header>
+<div class="body" class="belge">
+ <div class="heada"> 	
+  <h2>Se connecter à VisionTech- <br>Developpement web</h2>
+  <form>
+  	<label>E-mail</label>
+  	<input type="text" name="" placeholder="davidmba@gmail.com">
+  	<label>Mot de passe</label>
+  	<input placeholder="••••••••••••••" required="required" size="65" type="password" name="password" id="password">
+  	<input type="submit" name="" value="Se connecter" class="sub">
+  <p>Vous avez oublié votre mot de passe ? <a href="#"><u>Le réinitialiser.</u></a></p>
+</form>
+ </div>
+</div>
+<div class="ames">
+<div class="message">
+	<i class="bx bx-conversation bx-md"></i>
+</div>
+</div>
+<div class="footer">
+  <div class="heada">
+  	<img src="" class="fimg">
+  	<h2 class="white">&#169 VisionTech 2023</h2>
+  	<a href=""><i class="bx bxl-facebook bx-border bx-md"></i></a>
+  	<a href=""><i class="bx bxl-whatsapp bx-border bx-md"></i></a>
+  	<a href=""><i class="bx bxl-youtube bx-border bx-md"></i></a><br>
+  	<a href=""class="white">Conditions Générales de Vente</a><b class="div"></b>
+    <a href="" class="white">Politique de confidentialité</a>
+   <div class="patte"> <p >propulsé par <a href="" class="violet">David</a><b class="div"></b>
+     <a href="" class="violet"><u>Obtenez votre site web</u></a></p></div>
+ </div>
+  
+</div>
+
+
+</body>
+</html>
